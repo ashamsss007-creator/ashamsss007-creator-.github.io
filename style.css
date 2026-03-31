@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Helvetica", sans-serif;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+
+/* The Masonry Grid */
+.masonry-grid {
+    column-count: 3; /* Change to 2 for larger images */
+    column-gap: 20px;
+}
+
+.item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 100%;
+    display: block;
+    filter: grayscale(0%); /* Optional: set to 100% for moody look */
+    transition: 0.3s;
+}
+
+.item img:hover {
+    opacity: 0.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+    .masonry-grid { column-count: 1; }
+}
