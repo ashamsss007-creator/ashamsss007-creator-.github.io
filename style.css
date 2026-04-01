@@ -38,6 +38,8 @@ nav a:hover {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px; /* Reduced spacing below images */
+    background-color: #1a1a1a; /* Dark grey placeholder box */
+    min-height: 200px; /* Gives the browser a 'hint' of the size */
     
     /* Fading Effect Setup */
     opacity: 0; 
